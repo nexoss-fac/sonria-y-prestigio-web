@@ -38,161 +38,23 @@
     @media(max-width:650px){.container{width:min(100% - 32px,560px)}.topbar-inner{min-height:76px}.brand img{width:240px}.nav-inner{min-height:58px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:58px;left:0;right:0;background:#fff;padding:18px 24px 24px;border-bottom:1px solid var(--line);box-shadow:0 14px 20px rgba(0,0,0,.08);align-items:stretch;flex-direction:column;gap:15px}.nav-links.open{display:flex}.nav-links .button{margin-top:5px}.hero-grid{grid-template-columns:1fr;padding-top:55px;padding-bottom:65px;gap:32px}.hero h1{font-size:clamp(3rem,14vw,4.7rem)}.hero-visual{height:300px;border-radius:130px 130px 12px 12px}.proof-grid{grid-template-columns:1fr;padding:12px 0}.proof-item{justify-content:flex-start;padding:14px 10px}.proof-item+.proof-item{border-left:0;border-top:1px solid var(--line)}section{padding:70px 0}.section-head{margin-bottom:30px}.services{grid-template-columns:repeat(2,1fr);gap:10px}.service{min-height:135px;padding:17px 10px}.clinic-grid,.radiology-grid{grid-template-columns:1fr;gap:28px}.clinic-image{height:290px;border-top-right-radius:70px}.radiology-photo{height:270px;border-top-right-radius:70px}.team-card{padding:22px;gap:18px}.initials{width:70px;height:70px}.appointment-box{grid-template-columns:1fr;padding:30px 24px}.contact-grid{grid-template-columns:1fr}.footer-inner{align-items:flex-start;flex-direction:column}.whatsapp{right:14px;bottom:14px;padding:12px 16px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
   
-    /* Refinamiento visual: curvas, ritmo y acentos oliva sin alterar la estructura */
-    :root{--accent:#656514;--paper:#f8f7f3;--line:#e7e3da}
-    body{background:radial-gradient(ellipse at 8% 40%,rgba(221,215,199,.24),transparent 28%),radial-gradient(ellipse at 92% 72%,rgba(221,215,199,.22),transparent 25%),#f8f7f3}
-    .topbar{background:linear-gradient(110deg,#101010,#20201c 58%,#101010)}
-    .nav{box-shadow:0 5px 22px rgba(28,25,15,.055)}
-    .nav-links a:not(.button):hover{color:var(--accent)}
-    .button{background:var(--accent);border-color:var(--accent)}
-    .button:hover{background:#4e5010;border-color:#4e5010}
-    .button.light{background:#fff;color:#242414;border-color:#fff}
-    .hero{background:linear-gradient(112deg,#f7f5ef 0%,#f2efe7 48%,#e7e2d7 100%);color:#171713;isolation:isolate}
-    .hero:before{content:"";position:absolute;z-index:-1;right:-8%;top:-34%;width:68%;height:150%;border-radius:48% 0 0 52%;background:radial-gradient(ellipse at 62% 40%,rgba(255,255,255,.68),rgba(214,207,190,.32) 58%,transparent 70%);transform:rotate(-7deg)}
-    .hero-grid{min-height:570px;grid-template-columns:.92fr 1.08fr;gap:34px;padding-top:54px;padding-bottom:105px}
-    .hero h1{color:#171713;max-width:570px;font-size:clamp(3.15rem,5.8vw,5.35rem)}
-    .hero-copy p{color:#55554e}
-    .hero .eyebrow{color:var(--accent)!important}
-    .hero-visual{height:465px;border-radius:48% 48% 9% 9% / 36% 36% 9% 9%;box-shadow:0 24px 55px rgba(39,34,22,.18);border:7px solid rgba(255,255,255,.72);transform:translateY(4px)}
-    .hero-visual:before{content:"";position:absolute;z-index:1;inset:0;border:1px solid rgba(255,255,255,.42);border-radius:inherit;pointer-events:none}
-    .hero-visual:after{background:linear-gradient(180deg,transparent 60%,rgba(0,0,0,.28))}
-    .hero-caption{letter-spacing:.16em;text-shadow:0 2px 8px rgba(0,0,0,.4)}
-    .hero-rule{height:75px;bottom:-1px;width:100%;background:#f8f7f3;clip-path:ellipse(58% 45% at 50% 100%);opacity:1}
-    .proof{background:transparent;border:0;margin-top:-72px;z-index:4;position:relative}
-    .proof-grid{background:rgba(255,255,255,.94);border:1px solid rgba(255,255,255,.95);border-radius:28px;box-shadow:0 18px 45px rgba(38,34,24,.12);padding:22px 12px;grid-template-columns:repeat(4,1fr);backdrop-filter:blur(12px)}
-    .proof-item+.proof-item{border-left:1px solid #dedbd2}
-    .proof-icon{color:var(--accent);border-color:#a9a78a;background:#fbfaf6}
-    .proof-item strong{color:#191914}
-    .proof-item small{color:#68685e}
-    section:not(.hero){position:relative}
-    #especialidades{padding-top:76px;background:linear-gradient(180deg,rgba(248,247,243,.94),rgba(255,255,255,.72))}
-    .section-head .eyebrow{color:var(--accent)}
-    .section-head h2{color:#171713}
-    .services{gap:14px}
-    .service{border-radius:24px;background:rgba(255,255,255,.84);border-color:#e7e3da;box-shadow:0 5px 16px rgba(38,34,24,.045);min-height:150px}
-    .service:hover{border-color:#b6b38b;box-shadow:0 16px 32px rgba(52,48,20,.10)}
-    .service-icon{color:var(--accent)}
-    .clinic{background:linear-gradient(135deg,#eeece5,#f8f7f3);border-radius:90px 0 90px 0;margin-top:28px}
-    .clinic-image{border-radius:10px 150px 10px 90px;box-shadow:0 18px 42px rgba(30,28,18,.12)}
-    .clinic-copy h2,.radiology h2{letter-spacing:-.045em}
-    .radiology{border-radius:100px 0 100px 0;margin-top:28px;background:linear-gradient(115deg,#171713,#29291d)}
-    .radiology-photo{border-radius:130px 18px 100px 18px}
-    .team-card{border-radius:30px 8px 30px 8px;box-shadow:0 14px 35px rgba(30,28,18,.06)}
-    .initials{color:var(--accent);background:linear-gradient(145deg,#f7f5ec,#d9d5c5)}
-    .appointment{background:transparent}
-    .appointment-box{background:linear-gradient(115deg,#222218,#111);border-radius:42px 12px 42px 12px;box-shadow:0 18px 45px rgba(26,24,16,.15);position:relative;overflow:hidden}
-    .appointment-box:after{content:"";position:absolute;right:-80px;top:-170px;width:380px;height:380px;border:1px solid rgba(255,255,255,.14);border-radius:50%;box-shadow:0 0 0 28px rgba(255,255,255,.025),0 0 0 58px rgba(255,255,255,.02);pointer-events:none}
-    .contact-card{border-radius:24px 8px 24px 8px;box-shadow:0 8px 24px rgba(30,28,18,.045)}
-    .whatsapp{background:#1fa968;box-shadow:0 10px 28px rgba(18,120,72,.24)}
-    @media(max-width:900px){.proof-grid{grid-template-columns:repeat(2,1fr);row-gap:8px}.proof-item:nth-child(3){border-left:0}.hero-grid{padding-bottom:100px}.clinic,.radiology{border-radius:54px 0 54px 0}}
-    @media(max-width:650px){.hero-grid{padding-bottom:100px}.hero-visual{height:300px;border-radius:48% 48% 12% 12%}.proof{margin-top:-60px}.proof-grid{grid-template-columns:1fr 1fr;padding:12px 5px;border-radius:22px}.proof-item{padding:12px 8px;justify-content:flex-start}.proof-item+.proof-item{border-top:0}.proof-item:nth-child(even){border-left:1px solid #dedbd2}.proof-item:nth-child(3){border-top:1px solid #dedbd2}.clinic,.radiology{border-radius:42px 0 42px 0;margin-top:12px}.clinic-image{border-radius:10px 90px 10px 50px}.radiology-photo{border-radius:80px 12px 60px 12px}.service{border-radius:18px}.appointment-box{border-radius:28px 8px 28px 8px}}
-
+    /* Refinamiento de composición: conservar estrictamente la paleta institucional */
+    .hero{background:linear-gradient(112deg,#111 0%,#181818 55%,#252525 100%);color:#fff}
+    .hero h1{color:#fff}
+    .hero-copy p{color:#d5d6d7}
+    .hero .eyebrow{color:#c5c8cc!important}
+    .button{background:#111;border-color:#111}
+    .button:hover{background:#333;border-color:#333}
+    .button.light{background:#fff;color:#111;border-color:#fff}
+    .button.outline{background:transparent;color:#fff;border-color:rgba(255,255,255,.65)}
+    .whatsapp{background:#1fa968;color:#fff}
+    .proof{background:#fff}
+    .proof-grid{grid-template-columns:repeat(4,1fr);border-radius:18px;box-shadow:0 12px 32px rgba(0,0,0,.07)}
+    .proof-icon{color:#555;border-color:#c8cbd0;background:#fff}
+    .service-icon{color:#555}
+    .clinic{background:#eeefed}
+    .radiology{background:#111}
+    .initials{color:#333;background:linear-gradient(145deg,#f5f5f3,#c9cdd1)}
+    @media(max-width:900px){.proof-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:650px){.proof-grid{grid-template-columns:1fr 1fr}}
   </style>
-</head>
-<body>
-  <header class="topbar">
-    <div class="container topbar-inner">
-      <a class="brand" href="#inicio" aria-label="Clínica Sonría y Prestigio, inicio"><img src="assets/logo-horizontal.png" alt="Clínica Sonría & Prestigio — ¡Tu mejor forma de sonreír!"></a>
-      <div class="top-details">
-        <span><b>Dra. Liliana Reategui</b> · Odontóloga</span>
-        <span>C.C. Mamy, Local 61 · Puerto Ordaz</span>
-        <span><b>+58 424-934 8150</b></span>
-      </div>
-    </div>
-  </header>
-  <nav class="nav" aria-label="Navegación principal">
-    <div class="container nav-inner">
-      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks">Menú</button>
-      <div class="nav-links" id="navLinks">
-        <a href="#inicio">Inicio</a><a href="#clinica">Nuestra clínica</a><a href="#especialidades">Especialidades</a><a href="#equipo">Equipo profesional</a><a href="#radiologia">Radiología dental</a><a href="#contacto">Contacto</a>
-        <a class="button" href="#cita">Solicitar cita <span aria-hidden="true">↗</span></a>
-      </div>
-    </div>
-  </nav>
-  <main>
-    <section class="hero" id="inicio" style="padding:0">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow" style="color:#c5c8cc">Centro odontológico integral · Puerto Ordaz</div>
-          <h1>Tu mejor forma de sonreír.</h1>
-          <p>Un espacio para cuidar tu salud bucal con atención profesional, cercanía y una experiencia pensada para tu tranquilidad.</p>
-          <div class="hero-actions">
-            <a class="button light" href="#cita">Solicitar cita online <span aria-hidden="true">↗</span></a>
-            <a class="button outline" href="https://wa.me/584249348150" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <img src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=85" alt="Atención odontológica en un consultorio moderno" fetchpriority="high">
-          <span class="hero-caption">Cuidado · Confianza · Sonrisas</span>
-        </div>
-      </div>
-      <div class="hero-rule"></div>
-    </section>
-    <div class="proof">
-      <div class="container proof-grid">
-        <div class="proof-item"><span class="proof-icon" aria-hidden="true">20</span><div><strong>20 años de trayectoria</strong><small>Experiencia y compromiso</small></div></div>
-        <div class="proof-item"><span class="proof-icon" aria-hidden="true">♧</span><div><strong>Equipo de especialistas</strong><small>Atención profesional</small></div></div>
-        <div class="proof-item"><span class="proof-icon" aria-hidden="true">⌖</span><div><strong>Radiología dental</strong><small>Panorámica y cefálica</small></div></div>
-        <div class="proof-item"><span class="proof-icon" aria-hidden="true">✧</span><div><strong>Atención integral</strong><small>En un solo lugar</small></div></div>
-      </div>
-    </div>
-    <section id="especialidades">
-      <div class="container">
-        <div class="section-head"><div class="eyebrow">Nuestros servicios</div><h2>Odontología para cada etapa de tu vida</h2><p>Conoce algunas de las áreas de atención de la clínica. Escríbenos para consultar disponibilidad y detalles de cada tratamiento.</p></div>
-        <div class="services">
-          <a class="service" href="#cita" data-service="Odontología general"><svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 7c-6 0-9 5-8 11 1 7 4 10 5 17 1 6 3 9 6 9 3 0 3-10 8-10s5 10 8 10c3 0 5-3 6-9 1-7 4-10 5-17 1-6-2-11-8-11-4 0-6 2-11 2s-7-2-11-2z"/></svg><h3>Odontología general</h3></a>
-          <a class="service" href="#cita" data-service="Ortodoncia"><svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 19h38M5 29h38"/><rect x="7" y="15" width="8" height="18" rx="2"/><rect x="20" y="15" width="8" height="18" rx="2"/><rect x="33" y="15" width="8" height="18" rx="2"/></svg><h3>Ortodoncia</h3></a>
-          <a class="service" href="#cita" data-service="Endodoncia"><svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 7c-6 0-9 5-8 11 1 7 4 10 5 17 1 6 3 9 6 9 3 0 3-10 8-10s5 10 8 10c3 0 5-3 6-9 1-7 4-10 5-17 1-6-2-11-8-11-4 0-6 2-11 2s-7-2-11-2z"/><path d="M24 17v16"/></svg><h3>Endodoncia</h3></a>
-          <a class="service" href="#cita" data-service="Periodoncia"><svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 7c-6 0-9 5-8 11 1 7 4 10 5 17 1 6 3 9 6 9 3 0 3-10 8-10s5 10 8 10c3 0 5-3 6-9 1-7 4-10 5-17 1-6-2-11-8-11-4 0-6 2-11 2s-7-2-11-2z"/><path d="M5 29c7-5 12 4 19-1s12 4 19-1"/></svg><h3>Periodoncia</h3></a>
-          <a class="service" href="#cita" data-service="Exodoncia"><svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 7c-6 0-9 5-8 11 1 7 4 10 5 17 1 6 3 9 6 9 3 0 3-10 8-10s5 10 8 10c3 0 5-3 6-9 1-7 4-10 5-17 1-6-2-11-8-11-4 0-6 2-11 2s-7-2-11-2z"/><path d="m18 18 12 12m0-12L18 30"/></svg><h3>Exodoncia</h3></a>
-          <a class="service" href="#cita" data-service="Implantología"><svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M10 8c4-3 24-3 28 0 2 5-2 10-4 12H14c-2-2-6-7-4-12zM18 20v22m12-22v22M16 27h16m-16 7h16m-16 7h16"/></svg><h3>Implantología</h3></a>
-          <a class="service" href="#cita" data-service="Prótesis dental"><svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 12c0-5 6-5 8-3 4 3 12 3 16 0 2-2 8-2 8 3 0 7-4 9-8 11H16c-4-2-8-4-8-11zM14 30h20v8H14z"/></svg><h3>Prótesis dental</h3></a>
-          <a class="service" href="#cita" data-service="Blanqueamiento dental"><svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 7c-6 0-9 5-8 11 1 7 4 10 5 17 1 6 3 9 6 9 3 0 3-10 8-10s5 10 8 10c3 0 5-3 6-9 1-7 4-10 5-17 1-6-2-11-8-11-4 0-6 2-11 2s-7-2-11-2zM38 4v10m-5-5h10"/></svg><h3>Blanqueamiento dental</h3></a>
-          <a class="service" href="#cita" data-service="Limpieza dental"><svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 7c-6 0-9 5-8 11 1 7 4 10 5 17 1 6 3 9 6 9 3 0 3-10 8-10s5 10 8 10c3 0 5-3 6-9 1-7 4-10 5-17 1-6-2-11-8-11-4 0-6 2-11 2s-7-2-11-2z"/><path d="M38 6v8m-4-4h8"/></svg><h3>Limpieza dental</h3></a>
-          <a class="service" href="#cita" data-service="Radiología dental"><svg class="service-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="6" width="38" height="27" rx="3"/><path d="M24 33v7M16 42h16M18 13c-3 0-4 3-3 6s2 5 3 9 2 3 3-1 3-1 3 1 2 5 3 1 2-6 3-9-1-6-3-6c-3 0-4 1-6 1s-3-1-3-1z"/></svg><h3>Radiología dental</h3></a>
-        </div>
-      </div>
-    </section>
-    <section class="clinic" id="clinica">
-      <div class="container clinic-grid">
-        <div class="clinic-image"><img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1100&q=85" alt="Interior luminoso de una clínica dental" loading="lazy"></div>
-        <div class="clinic-copy"><div class="eyebrow">Nuestra clínica</div><h2>Atención cercana en un espacio profesional.</h2><p>En Sonría &amp; Prestigio queremos que cada visita sea una experiencia clara y tranquila. Nuestro equipo puede orientarte sobre las especialidades disponibles y los pasos para recibir atención.</p><p>Estamos en el Centro Comercial Mamy, Local 61, Alta Vista Norte, Puerto Ordaz.</p><div class="signature">Clínica Sonría &amp; Prestigio <br><strong>¡Tu mejor forma de sonreír!</strong></div></div>
-      </div>
-    </section>
-    <section id="equipo">
-      <div class="container">
-        <div class="section-head"><div class="eyebrow">Equipo profesional</div><h2>Atención con respaldo profesional</h2><p>Conoce a la dirección de la clínica. Los perfiles adicionales se publicarán cuando sus datos y credenciales estén confirmados.</p></div>
-        <article class="team-card"><div class="initials" aria-hidden="true">LR</div><div><h3>Dra. Liliana Reategui</h3><p>Odontóloga · Dirección de Clínica Sonría &amp; Prestigio</p></div></article>
-      </div>
-    </section>
-    <section class="radiology" id="radiologia">
-      <div class="container radiology-grid">
-        <div><div class="eyebrow" style="color:#bfc2c6">Radiología dental</div><h2>Información y orientación para tus estudios.</h2><p>Consulta con nuestro equipo sobre los estudios radiológicos disponibles, sus requisitos y la forma de solicitar atención.</p><a class="button light" href="https://wa.me/584249348150?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20radiolog%C3%ADa%20dental." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a></div>
-        <div class="radiology-photo"><img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1100&q=85" alt="Equipamiento para atención odontológica" loading="lazy"></div>
-      </div>
-    </section>
-    <section class="appointment" id="cita">
-      <div class="container appointment-box"><div><div class="eyebrow" style="color:#c1c4c8">Da el primer paso</div><h2>Tu próxima sonrisa comienza aquí.</h2><p>Cuéntanos qué atención necesitas. Nuestro equipo te ayudará a coordinar tu solicitud.</p></div><a class="button light" href="https://wa.me/584249348150?text=Hola%2C%20quiero%20solicitar%20una%20cita%20en%20Cl%C3%ADnica%20Sonr%C3%ADa%20%26%20Prestigio." target="_blank" rel="noopener noreferrer">Solicitar cita por WhatsApp ↗</a></div>
-    </section>
-    <section id="contacto">
-      <div class="container"><div class="section-head"><div class="eyebrow">Estamos para atenderte</div><h2>Visítanos o escríbenos.</h2></div>
-        <div class="contact-grid">
-          <div class="contact-card"><div class="eyebrow">Dirección</div><h3>Puerto Ordaz</h3><p>C.C. Mamy, Local 61, Alta Vista Norte, Ciudad Guayana, Venezuela.</p></div>
-          <div class="contact-card"><div class="eyebrow">WhatsApp y teléfono</div><h3>Hablemos</h3><p><a href="https://wa.me/584249348150" target="_blank" rel="noopener noreferrer">+58 424-934 8150</a></p></div>
-          <div class="contact-card"><div class="eyebrow">Instagram</div><h3>Síguenos</h3><p><a href="https://www.instagram.com/clinicasonriayprestigio_/" target="_blank" rel="noopener noreferrer">@clinicasonriayprestigio_</a></p></div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer><div class="container footer-inner"><img class="footer-brand" src="assets/logo-horizontal.png" alt="Sonría & Prestigio"><small>© <span id="year"></span> Clínica Sonría &amp; Prestigio · Puerto Ordaz, Venezuela</small><small>Diseño y desarrollo · MAKD Estudio Creativo</small></div></footer>
-  <a class="whatsapp" href="https://wa.me/584249348150" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">WhatsApp ↗</a>
-  <script>
-    const toggle=document.getElementById('menuToggle');
-    const links=document.getElementById('navLinks');
-    toggle.addEventListener('click',()=>{const open=links.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));});
-    links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');toggle.setAttribute('aria-expanded','false');}));
-    document.querySelectorAll('[data-service]').forEach(card=>card.addEventListener('click',()=>{const message='Hola, quisiera información y una cita para '+card.dataset.service+'.';document.querySelector('#cita .button').href='https://wa.me/584249348150?text='+encodeURIComponent(message);}));
-    document.getElementById('year').textContent=new Date().getFullYear();
-  </script>
-</body>
-</html>
