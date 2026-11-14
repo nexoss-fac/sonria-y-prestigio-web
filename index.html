@@ -37,6 +37,56 @@
     @media(max-width:900px){.top-details{display:none}.hero-grid{grid-template-columns:1fr 1fr;gap:22px}.hero-visual{height:390px}.services{grid-template-columns:repeat(3,1fr)}.clinic-grid,.radiology-grid{gap:34px}.appointment-box{padding:38px}}
     @media(max-width:650px){.container{width:min(100% - 32px,560px)}.topbar-inner{min-height:76px}.brand img{width:240px}.nav-inner{min-height:58px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:58px;left:0;right:0;background:#fff;padding:18px 24px 24px;border-bottom:1px solid var(--line);box-shadow:0 14px 20px rgba(0,0,0,.08);align-items:stretch;flex-direction:column;gap:15px}.nav-links.open{display:flex}.nav-links .button{margin-top:5px}.hero-grid{grid-template-columns:1fr;padding-top:55px;padding-bottom:65px;gap:32px}.hero h1{font-size:clamp(3rem,14vw,4.7rem)}.hero-visual{height:300px;border-radius:130px 130px 12px 12px}.proof-grid{grid-template-columns:1fr;padding:12px 0}.proof-item{justify-content:flex-start;padding:14px 10px}.proof-item+.proof-item{border-left:0;border-top:1px solid var(--line)}section{padding:70px 0}.section-head{margin-bottom:30px}.services{grid-template-columns:repeat(2,1fr);gap:10px}.service{min-height:135px;padding:17px 10px}.clinic-grid,.radiology-grid{grid-template-columns:1fr;gap:28px}.clinic-image{height:290px;border-top-right-radius:70px}.radiology-photo{height:270px;border-top-right-radius:70px}.team-card{padding:22px;gap:18px}.initials{width:70px;height:70px}.appointment-box{grid-template-columns:1fr;padding:30px 24px}.contact-grid{grid-template-columns:1fr}.footer-inner{align-items:flex-start;flex-direction:column}.whatsapp{right:14px;bottom:14px;padding:12px 16px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  
+    /* Refinamiento visual: curvas, ritmo y acentos oliva sin alterar la estructura */
+    :root{--accent:#656514;--paper:#f8f7f3;--line:#e7e3da}
+    body{background:radial-gradient(ellipse at 8% 40%,rgba(221,215,199,.24),transparent 28%),radial-gradient(ellipse at 92% 72%,rgba(221,215,199,.22),transparent 25%),#f8f7f3}
+    .topbar{background:linear-gradient(110deg,#101010,#20201c 58%,#101010)}
+    .nav{box-shadow:0 5px 22px rgba(28,25,15,.055)}
+    .nav-links a:not(.button):hover{color:var(--accent)}
+    .button{background:var(--accent);border-color:var(--accent)}
+    .button:hover{background:#4e5010;border-color:#4e5010}
+    .button.light{background:#fff;color:#242414;border-color:#fff}
+    .hero{background:linear-gradient(112deg,#f7f5ef 0%,#f2efe7 48%,#e7e2d7 100%);color:#171713;isolation:isolate}
+    .hero:before{content:"";position:absolute;z-index:-1;right:-8%;top:-34%;width:68%;height:150%;border-radius:48% 0 0 52%;background:radial-gradient(ellipse at 62% 40%,rgba(255,255,255,.68),rgba(214,207,190,.32) 58%,transparent 70%);transform:rotate(-7deg)}
+    .hero-grid{min-height:570px;grid-template-columns:.92fr 1.08fr;gap:34px;padding-top:54px;padding-bottom:105px}
+    .hero h1{color:#171713;max-width:570px;font-size:clamp(3.15rem,5.8vw,5.35rem)}
+    .hero-copy p{color:#55554e}
+    .hero .eyebrow{color:var(--accent)!important}
+    .hero-visual{height:465px;border-radius:48% 48% 9% 9% / 36% 36% 9% 9%;box-shadow:0 24px 55px rgba(39,34,22,.18);border:7px solid rgba(255,255,255,.72);transform:translateY(4px)}
+    .hero-visual:before{content:"";position:absolute;z-index:1;inset:0;border:1px solid rgba(255,255,255,.42);border-radius:inherit;pointer-events:none}
+    .hero-visual:after{background:linear-gradient(180deg,transparent 60%,rgba(0,0,0,.28))}
+    .hero-caption{letter-spacing:.16em;text-shadow:0 2px 8px rgba(0,0,0,.4)}
+    .hero-rule{height:75px;bottom:-1px;width:100%;background:#f8f7f3;clip-path:ellipse(58% 45% at 50% 100%);opacity:1}
+    .proof{background:transparent;border:0;margin-top:-72px;z-index:4;position:relative}
+    .proof-grid{background:rgba(255,255,255,.94);border:1px solid rgba(255,255,255,.95);border-radius:28px;box-shadow:0 18px 45px rgba(38,34,24,.12);padding:22px 12px;grid-template-columns:repeat(4,1fr);backdrop-filter:blur(12px)}
+    .proof-item+.proof-item{border-left:1px solid #dedbd2}
+    .proof-icon{color:var(--accent);border-color:#a9a78a;background:#fbfaf6}
+    .proof-item strong{color:#191914}
+    .proof-item small{color:#68685e}
+    section:not(.hero){position:relative}
+    #especialidades{padding-top:76px;background:linear-gradient(180deg,rgba(248,247,243,.94),rgba(255,255,255,.72))}
+    .section-head .eyebrow{color:var(--accent)}
+    .section-head h2{color:#171713}
+    .services{gap:14px}
+    .service{border-radius:24px;background:rgba(255,255,255,.84);border-color:#e7e3da;box-shadow:0 5px 16px rgba(38,34,24,.045);min-height:150px}
+    .service:hover{border-color:#b6b38b;box-shadow:0 16px 32px rgba(52,48,20,.10)}
+    .service-icon{color:var(--accent)}
+    .clinic{background:linear-gradient(135deg,#eeece5,#f8f7f3);border-radius:90px 0 90px 0;margin-top:28px}
+    .clinic-image{border-radius:10px 150px 10px 90px;box-shadow:0 18px 42px rgba(30,28,18,.12)}
+    .clinic-copy h2,.radiology h2{letter-spacing:-.045em}
+    .radiology{border-radius:100px 0 100px 0;margin-top:28px;background:linear-gradient(115deg,#171713,#29291d)}
+    .radiology-photo{border-radius:130px 18px 100px 18px}
+    .team-card{border-radius:30px 8px 30px 8px;box-shadow:0 14px 35px rgba(30,28,18,.06)}
+    .initials{color:var(--accent);background:linear-gradient(145deg,#f7f5ec,#d9d5c5)}
+    .appointment{background:transparent}
+    .appointment-box{background:linear-gradient(115deg,#222218,#111);border-radius:42px 12px 42px 12px;box-shadow:0 18px 45px rgba(26,24,16,.15);position:relative;overflow:hidden}
+    .appointment-box:after{content:"";position:absolute;right:-80px;top:-170px;width:380px;height:380px;border:1px solid rgba(255,255,255,.14);border-radius:50%;box-shadow:0 0 0 28px rgba(255,255,255,.025),0 0 0 58px rgba(255,255,255,.02);pointer-events:none}
+    .contact-card{border-radius:24px 8px 24px 8px;box-shadow:0 8px 24px rgba(30,28,18,.045)}
+    .whatsapp{background:#1fa968;box-shadow:0 10px 28px rgba(18,120,72,.24)}
+    @media(max-width:900px){.proof-grid{grid-template-columns:repeat(2,1fr);row-gap:8px}.proof-item:nth-child(3){border-left:0}.hero-grid{padding-bottom:100px}.clinic,.radiology{border-radius:54px 0 54px 0}}
+    @media(max-width:650px){.hero-grid{padding-bottom:100px}.hero-visual{height:300px;border-radius:48% 48% 12% 12%}.proof{margin-top:-60px}.proof-grid{grid-template-columns:1fr 1fr;padding:12px 5px;border-radius:22px}.proof-item{padding:12px 8px;justify-content:flex-start}.proof-item+.proof-item{border-top:0}.proof-item:nth-child(even){border-left:1px solid #dedbd2}.proof-item:nth-child(3){border-top:1px solid #dedbd2}.clinic,.radiology{border-radius:42px 0 42px 0;margin-top:12px}.clinic-image{border-radius:10px 90px 10px 50px}.radiology-photo{border-radius:80px 12px 60px 12px}.service{border-radius:18px}.appointment-box{border-radius:28px 8px 28px 8px}}
+
   </style>
 </head>
 <body>
@@ -80,9 +130,10 @@
     </section>
     <div class="proof">
       <div class="container proof-grid">
-        <div class="proof-item"><span class="proof-icon" aria-hidden="true">20</span><div><strong>20 años de trayectoria</strong><small>Experiencia y compromiso desde 2007</small></div></div>
-        <div class="proof-item"><span class="proof-icon" aria-hidden="true">⌖</span><div><strong>Varias especialidades</strong><small>Atención integral en un solo lugar</small></div></div>
-        <div class="proof-item"><span class="proof-icon" aria-hidden="true">＋</span><div><strong>Radiología dental</strong><small>Consulta por estudios disponibles</small></div></div>
+        <div class="proof-item"><span class="proof-icon" aria-hidden="true">20</span><div><strong>20 años de trayectoria</strong><small>Experiencia y compromiso</small></div></div>
+        <div class="proof-item"><span class="proof-icon" aria-hidden="true">♧</span><div><strong>Equipo de especialistas</strong><small>Atención profesional</small></div></div>
+        <div class="proof-item"><span class="proof-icon" aria-hidden="true">⌖</span><div><strong>Radiología dental</strong><small>Panorámica y cefálica</small></div></div>
+        <div class="proof-item"><span class="proof-icon" aria-hidden="true">✧</span><div><strong>Atención integral</strong><small>En un solo lugar</small></div></div>
       </div>
     </div>
     <section id="especialidades">
