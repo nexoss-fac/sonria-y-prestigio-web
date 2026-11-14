@@ -39,6 +39,14 @@
     .appointment{background:#eeefed}.appointment-box{background:#111;color:#fff;padding:54px;border-radius:22px;display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}.appointment-box h2{font:500 clamp(2.3rem,4vw,3.6rem)/1.1 var(--serif);margin:8px 0}.appointment-box p{color:#c9cacc;margin:0}
     .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.contact-card{padding:25px;background:#fff;border:1px solid var(--line);border-radius:14px}.contact-card .eyebrow{letter-spacing:.15em}.contact-card h3{font:500 1.4rem var(--serif);margin:8px 0}.contact-card p{margin:0;color:var(--muted);font-size:.92rem}.contact-card a{font-weight:700;text-decoration:none}
     footer{background:#111;color:#c9cacc;padding:34px 0}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}.footer-brand{width:220px;filter:grayscale(1) brightness(0) invert(1)}footer small{font-size:.78rem}
+
+    .financing{background:#171717;color:#fff;padding:76px 0}
+    .financing-box{display:grid;grid-template-columns:170px 1fr;gap:28px 44px;align-items:center;background:linear-gradient(125deg,#252525,#101010);border:1px solid #444;border-radius:22px;padding:42px}
+    .financing-mark{display:grid;place-items:center;width:150px;height:150px;border:2px solid #fff;border-radius:50%;font-weight:800;letter-spacing:.12em;font-size:1.35rem}
+    .financing-copy h2{font:500 clamp(2.2rem,4vw,3.3rem)/1.1 var(--serif);margin:10px 0 14px}
+    .financing-copy p{color:#d1d1d1;max-width:700px;margin:0 0 22px}
+    .financing-note{grid-column:2;color:#aeb0b3;font-size:.78rem;margin:0}
+    @media(max-width:650px){.financing-box{grid-template-columns:1fr;padding:28px 22px}.financing-mark{width:100px;height:100px;font-size:1.05rem}.financing-note{grid-column:1}}
     .whatsapp{position:fixed;right:22px;bottom:22px;z-index:30;background:#1fa968;color:#fff;border-radius:999px;padding:14px 19px;text-decoration:none;font-weight:700;box-shadow:0 8px 24px rgba(0,0,0,.2)}
     @media(max-width:900px){.top-details{display:none}.hero-grid{grid-template-columns:1fr 1fr;gap:22px}.hero-visual{height:390px}.services{grid-template-columns:repeat(3,1fr)}.clinic-grid,.radiology-grid{gap:34px}.appointment-box{padding:38px}}
     @media(max-width:650px){.container{width:min(100% - 32px,560px)}.topbar-inner{min-height:76px}.brand img{width:240px}.nav-inner{min-height:58px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:58px;left:0;right:0;background:#fff;padding:18px 24px 24px;border-bottom:1px solid var(--line);box-shadow:0 14px 20px rgba(0,0,0,.08);align-items:stretch;flex-direction:column;gap:15px}.nav-links.open{display:flex}.nav-links .button{margin-top:5px}.hero-grid{grid-template-columns:1fr;padding-top:55px;padding-bottom:65px;gap:32px}.hero h1{font-size:clamp(3rem,14vw,4.7rem)}.hero-visual{height:300px;border-radius:130px 130px 12px 12px}.proof-grid{grid-template-columns:1fr;padding:12px 0}.proof-item{justify-content:flex-start;padding:14px 10px}.proof-item+.proof-item{border-left:0;border-top:1px solid var(--line)}section{padding:70px 0}.section-head{margin-bottom:30px}.services{grid-template-columns:repeat(2,1fr);gap:10px}.service{min-height:135px;padding:17px 10px}.clinic-grid,.radiology-grid{grid-template-columns:1fr;gap:28px}.clinic-image{height:290px;border-top-right-radius:70px}.radiology-photo{height:270px;border-top-right-radius:70px}.team-card{padding:22px;gap:18px}.initials{width:70px;height:70px}.appointment-box{grid-template-columns:1fr;padding:30px 24px}.contact-grid{grid-template-columns:1fr}.footer-inner{align-items:flex-start;flex-direction:column}.whatsapp{right:14px;bottom:14px;padding:12px 16px}}
@@ -81,7 +89,7 @@
     <div class="container nav-inner">
       <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks">Menú</button>
       <div class="nav-links" id="navLinks">
-        <a href="#inicio">Inicio</a><a href="#clinica">Nuestra clínica</a><a href="#especialidades">Especialidades</a><a href="#equipo">Equipo profesional</a><a href="#radiologia">Radiología dental</a><a href="#contacto">Contacto</a>
+        <a href="#inicio">Inicio</a><a href="#clinica">Nuestra clínica</a><a href="#especialidades">Especialidades</a><a href="#equipo">Equipo profesional</a><a href="#financiamiento">Cashea</a><a href="#radiologia">Radiología dental</a><a href="#contacto">Contacto</a>
         <a class="button" href="#cita">Solicitar cita <span aria-hidden="true">↗</span></a>
       </div>
     </div>
@@ -113,6 +121,19 @@
         <div class="proof-item"><span class="proof-icon" aria-hidden="true">✧</span><div><strong>Atención integral</strong><small>En un solo lugar</small></div></div>
       </div>
     </div>
+
+    <section class="financing" id="financiamiento">
+      <div class="container financing-box">
+        <div class="financing-mark" aria-label="Cashea">CASHEA</div>
+        <div class="financing-copy">
+          <div class="eyebrow">Una alternativa para planificar tu tratamiento</div>
+          <h2>Tu salud bucal, con opciones de pago.</h2>
+          <p>En Clínica Sonría &amp; Prestigio puedes consultar la opción de pago con Cashea para tus tratamientos odontológicos. Escríbenos para confirmar los servicios participantes y conocer las condiciones disponibles antes de agendar.</p>
+          <a class="button light" href="https://wa.me/584249168847?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20pagar%20mi%20tratamiento%20con%20Cashea." target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a>
+        </div>
+        <p class="financing-note">La aprobación, inicial, cuotas, límites y disponibilidad dependen de las condiciones vigentes de Cashea y de la operación. Confirma los detalles con nuestro equipo antes de realizar tu compra.</p>
+      </div>
+    </section>
     <section id="especialidades">
       <div class="container">
         <div class="section-head"><div class="eyebrow">Nuestros servicios</div><h2>Odontología para cada etapa de tu vida</h2><p>Conoce algunas de las áreas de atención de la clínica. Escríbenos para consultar disponibilidad y detalles de cada tratamiento.</p></div>
