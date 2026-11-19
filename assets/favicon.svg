@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 462 480">
+  <style>
+    image { filter: none; }
+    @media (prefers-color-scheme: dark) {
+      image { filter: invert(1); }
+    }
+  </style>
+  <image href="/assets/logo-diente.png" x="0" y="0" width="462" height="480" preserveAspectRatio="xMidYMid meet"/>
+</svg>
