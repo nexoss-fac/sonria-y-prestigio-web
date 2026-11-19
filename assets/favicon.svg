@@ -1,9 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 462 480">
-  <style>
-    image { filter: none; }
-    @media (prefers-color-scheme: dark) {
-      image { filter: invert(1); }
-    }
-  </style>
-  <image href="/assets/logo-diente.png" x="0" y="0" width="462" height="480" preserveAspectRatio="xMidYMid meet"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="15" fill="#171717"/>
+  <path d="M19 13c-7 0-11 6-10 14 1 7 5 12 7 19 1 5 3 8 6 8 4 0 4-12 10-12s6 12 10 12c3 0 5-3 6-8 2-7 6-12 7-19 1-8-3-14-10-14-5 0-8 3-13 3s-8-3-13-3Z" fill="none" stroke="#f7f7f5" stroke-width="3.2" stroke-linejoin="round"/>
+  <path d="M32 24v17" stroke="#c4c8cd" stroke-width="2.6" stroke-linecap="round"/>
 </svg>
