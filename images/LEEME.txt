@@ -1,0 +1,4 @@
+Coloca aquí las fotos autorizadas por la clínica:
+  hero.jpg     -> foto principal del inicio (paciente sonriendo, horizontal, mínimo 1600 px de ancho)
+  clinica.jpg  -> foto de la recepción o consultorio para el banner "Agenda tu cita hoy"
+Cuando existan, la página las usa automáticamente (y oculta el diente del hero). No hace falta tocar el código.
